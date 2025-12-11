@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Galeri Ondel-Ondel Betawi Estetik</title>
+       <link rel="stylesheet" href="style.css">
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">ONDEL-ONDEL GALERI</div>
+            <nav>
+                <a href="#home" class="nav-link active">Beranda</a>
+                <a href="#makna" class="nav-link">Sejarah</a>
+                <a href="#galeri" class="nav-link">Galeri</a>
+                <a href="#kontak" class="nav-link">Museum Betawi</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO / BERANDA -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <p class="subtitle">Warisan Budaya Jakarta</p>
+                <h1>Ondel-Ondel: Simbol Kegembiraan Betawi</h1>
+                <p class="hero-text">Jelajahi keindahan, sejarah, dan filosofi di balik boneka raksasa ikonik ini.</p>
+                <button class="btn-primary" onclick="scrollToSection('makna')">
+                    PELAJARI FILOSOFI <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAKNA & SEJARAH -->
+    <section id="makna" class="makna-section">
+        <div class="container">
+            <h2>Filosofi Ondel-Ondel</h2>
+            <div class="makna-grid">
+                <div class="makna-card" data-aos="fade-up" data-aos-delay="150">
+                    <h3>Sejarah Ondel-Ondel</h3>
+                    <p>Ondel-ondel adalah boneka raksasa khas Betawi yang awalnya digunakan dalam tradisi tolak bala untuk menjaga kampung dari roh jahat. Biasanya tampil berpasangan, dengan wajah merah untuk laki-laki dan putih untuk perempuan. Kini, ondel-ondel menjadi ikon budaya Jakarta yang tampil dalam festival dan acara adat.</p>
+                </div>
+
+                <div class="makna-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Makna dan Filosofi</h3>
+                    <p>Wajah merah pada figur laki-laki melambangkan keberanian dan kekuatan, sedangkan wajah putih pada figur perempuan melambangkan kesucian dan kelembutan. Dalam pertunjukan, ondel-ondel diiringi musik Gambang Kromong, menegaskan identitas kesenian Betawi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAKNA WUJUD -->
+    <section class="makna-section">
+        <div class="container">
+            <h2>Makna di Balik Wajah</h2>
+            <div class="makna-grid">
+                <div class="makna-card card-merah" data-aos="fade-up">
+                   <i class="fas fa-male"></i>
+                    <h3>Ondel Pria (Merah)</h3>
+                    <p>Wajah merah melambangkan keberanian, semangat, dan kekuatan. Bertindak sebagai pelindung dan penolak bala.</p>
+                </div>
+                <div class="makna-card card-putih" data-aos="fade-up" data-aos-delay="150">
+                    <i class="fas fa-female"></i>
+                    <h3>Ondel Wanita (Putih)</h3>
+                    <p>Wajah putih melambangkan kesucian, kebijaksanaan, dan kebaikan. Membawa aura kehangatan dan kesuburan.</p>
+                </div>
+                <div class="makna-card card-iringan" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-music"></i>
+                    <h3>Iringan Musik</h3>
+                    <p>Diiringi musik Gambang Kromong, menciptakan suasana riang gembira.</p>
+                    <audio src="May_Sumarna_-_Kicir_Kicir_(mp3.pm).mp3" controls autoplay></audio>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI -->
+    <section id="galeri" class="galeri-section">
+        <div class="container">
+            <h2>Koleksi Galeri Terbaik</h2>
+            <p class="galeri-subtitle">Lihat detail ukiran, warna, dan aksesoris dari berbagai era Ondel-Ondel.</p>
+            <div class="galeri-grid">
+                <div class="galeri-item" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Ondel_-_Ondel.jpg/500px-Ondel_-_Ondel.jpg');" onclick="showModal('Ondel Era 70-an', 'Representasi klasik dengan kain batik tradisional.')"></div>
+                <div class="galeri-item" style="background-image: url('https://akcdn.detik.net.id/api/wm/2021/06/18/ondel-ondel-3_169.jpeg?w=650');" onclick="showModal('Pasangan Modern', 'Versi yang lebih baru dengan sentuhan warna kontemporer.')">
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="kontak" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                 <div class="footer-info">
+                    <h3>Museum Digital Betawi</h3>
+                    <p>Menghadirkan warisan budaya Ondel-Ondel ke dunia digital.</p>
+                    <p>Jakarta, Indonesia</p>
+
+     <!--KONTAK DAN PETA -->
+<section id="Museum" class="Museum-section">
+    <div class="container">
+        <h2>Lokasi Museum Digital Betawi</h2>
+        <p class="kontak-text">Kunjungi Museum Digital Betawi dan jelajahi warisan budaya Ondel-Ondel secara langsung.</p>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4958670902616!2d106.82715341476965!3d-6.175110895535783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5a2aa2f90f1%3A0x6c44c497e3ee4d12!2sMonas!5e0!3m2!1sid!2sid!4v1600000000000!5m2!1sid!2sid" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Ondel-Ondel Galeri Estetik. Hak Cipta Dilindungi.</p>
+        </div>
+    </div>
+</section>
+
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetailModal()">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalBody"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
